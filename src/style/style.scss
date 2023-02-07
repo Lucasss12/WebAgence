@@ -1,0 +1,76 @@
+$white: #edeff4;
+
+body{
+   margin: 0 6%;
+   background-color: $white;
+}
+
+.title{
+    margin-bottom: 20px;
+}
+
+// Navbar
+
+.container-fluid{
+    padding: 0;
+}
+
+// HomePage
+
+.containerHome{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+// Link animation
+
+a{
+    text-decoration: none;
+    color: #697ed4;
+  }
+  
+  .underline{
+    position: relative;
+  }
+  
+  .underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #697ed4;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+// ABout
+
+.containerAbout{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+// Works 
+
+.containerWork{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.containerProject{
+    display: flex;
+    justify-content: start;
+}
+.card{
+    width: 18rem;
+    margin: 20px 40px 20px 0;
+}
